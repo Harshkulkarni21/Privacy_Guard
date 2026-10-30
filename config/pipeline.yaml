@@ -1,0 +1,69 @@
+project:
+  name: privacyguard
+  version: 0.1.0
+  random_seed: 42
+
+source:
+  path: data/raw/customers.csv
+  format: csv
+
+output:
+  path: data/output/minimized_customers.parquet
+  format: parquet
+  quarantine_path: data/output/quarantine.csv
+  audit_db_path: data/output/privacyguard_audit.duckdb
+  profile_report_path: data/output/profile_report.json
+  reconciliation_report_path: data/output/reconciliation_report.json
+
+schema:
+  required_columns:
+    - customer_id
+    - full_name
+    - email
+    - phone
+    - age
+    - city
+    - account_balance
+    - updated_at
+  optional_columns: []
+  primary_key: customer_id
+  types:
+    customer_id: string
+    full_name: string
+    email: string
+    phone: string
+    age: integer
+    city: string
+    account_balance: float
+    updated_at: datetime
+
+privacy:
+  token_secret_env: PRIVACY_GUARD_TOKEN_SECRET
+  sensitive_fields:
+    full_name: mask
+    email: tokenize
+    phone: tokenize
+    city: generalize
+    age: generalize
+    account_balance: drop
+  retain_fields:
+    - customer_id
+    - age_band
+    - city_generalized
+    - email_token
+    - phone_token
+
+validation:
+  allow_missing_optional_values: false
+  duplicate_policy: quarantine_conflicts
+  reject_unknown_columns: true
+  min_age: 18
+  max_age: 100
+  max_negative_balance: 0
+
+benchmark:
+  sizes:
+    - 100
+    - 10000
+    - 100000
+  random_seed: 42

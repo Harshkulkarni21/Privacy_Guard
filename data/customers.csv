@@ -1,0 +1,21 @@
+customer_id,email,first_name,last_name,dob,phone,ssn,address,city,state,signup_date,customer_tier
+CUST-00001,user1.last1@example.com,User1,Last1,1990-01-01,754-214-1409,859-45-5012,10 Main St,City1,CA,2020-01-01,basic
+CUST-00002,user2.last2@example.com,User2,Last2,1990-01-12,328-242-2679,792-79-2424,11 Main St,City2,NY,2020-01-06,silver
+CUST-00003,user3.last3@example.com,User3,Last3,1990-01-23,704-532-1520,130-21-4582,12 Main St,City3,TX,2020-01-11,gold
+CUST-00004,user4.last4@example.com,User4,Last4,1990-02-03,338-617-1434,674-35-9928,13 Main St,City4,WA,2020-01-16,platinum
+CUST-00005,user5.last5@example.com,User5,Last5,1990-02-14,529-325-8359,703-45-1106,14 Main St,City5,FL,2020-01-21,basic
+CUST-00006,user6.last6@example.com,User6,Last6,1990-02-25,877-925-3615,814-64-6574,15 Main St,City6,IL,2020-01-26,silver
+CUST-00007,user7.last7@example.com,User7,Last7,1990-03-08,384-259-4527,881-53-2674,16 Main St,City7,OH,2020-01-31,gold
+CUST-00008,user8.last8@example.com,User8,Last8,1990-03-19,194-489-2584,467-54-5333,17 Main St,City8,NC,2020-02-05,platinum
+CUST-00009,user9.last9@example.com,User9,Last9,1990-03-30,926-144-8527,649-25-7201,18 Main St,City9,CA,2020-02-10,basic
+CUST-00010,user10.last10@example.com,User10,Last10,1990-04-10,180-665-5803,949-90-6925,19 Main St,City10,NY,2020-02-15,silver
+CUST-00011,user11.last11@example.com,User11,Last11,1990-04-21,691-296-2139,146-94-4733,20 Main St,City1,TX,2020-02-20,gold
+CUST-00012,user12.last12@example.com,User12,Last12,1990-05-02,891-396-2307,975-39-2654,21 Main St,City2,WA,2020-02-25,platinum
+CUST-00013,user13.last13@example.com,User13,Last13,1990-05-13,489-384-8428,750-56-3664,22 Main St,City3,FL,2020-03-01,basic
+CUST-00014,user14.last14@example.com,User14,Last14,1990-05-24,479-463-4432,786-44-2169,23 Main St,City4,IL,2020-03-06,silver
+CUST-00015,user15.last15@example.com,User15,Last15,1990-06-04,723-750-3803,646-41-3677,24 Main St,City5,OH,2020-03-11,gold
+CUST-00016,user16.last16@example.com,User16,Last16,1990-06-15,573-488-5422,755-98-4598,25 Main St,City6,NC,2020-03-16,platinum
+CUST-00017,user17.last17@example.com,User17,Last17,1990-06-26,801-432-1916,334-14-6168,26 Main St,City7,CA,2020-03-21,basic
+CUST-00018,user18.last18@example.com,User18,Last18,1990-07-07,510-374-2084,316-82-6155,27 Main St,City8,NY,2020-03-26,silver
+CUST-00019,user19.last19@example.com,User19,Last19,1990-07-18,317-771-9179,505-92-8517,28 Main St,City9,TX,2020-03-31,gold
+CUST-00020,user20.last20@example.com,User20,Last20,1990-07-29,246-371-3287,352-81-9830,29 Main St,City10,WA,2020-04-05,platinum
